@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe600;
+    box-sizing: border-box;
+    z-index: 1;
+
+    :global {
+        $height: 36px;    // This is not an arbitrary value, this is the height of the MercadoLibre logo for Retina Displays.
+        $border-radius: 4px;
+
+        .logo {
+            width: 53px;
+            height: $height;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            flex: 1;
+            height: $height;
+            margin-left: 1%;
+
+            .text-box {
+                font-size: 16px;
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+            }
+
+            .search-icon {
+                width: $height;
+                background-color: #eee;
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+            }
+        }
+    }
+}

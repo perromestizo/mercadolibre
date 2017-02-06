@@ -1,0 +1,19 @@
+@import '../../../base.scss';
+
+.app {
+    :global {
+        $height: 54px;
+        $lateral-padding: 10%;
+
+        .header {
+            height: $height;
+            padding: 0 $lateral-padding;
+        }
+
+        .content {
+            margin: 0 $lateral-padding;
+            padding-top: $height;
+            background-color: #fff;
+        }
+    }
+}

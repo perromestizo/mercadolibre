@@ -1,0 +1,15 @@
+.search-box {
+    display: flex;
+    align-items: center;
+
+    :global {
+        .text-box {
+            height: 100%;
+        }
+
+        .search-icon {
+            height: 100%;
+            flex: 1 0 auto;
+        }
+    }
+}

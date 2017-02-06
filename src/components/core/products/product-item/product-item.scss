@@ -1,0 +1,60 @@
+.product-item {
+    display: flex;
+    margin: 1em;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+
+    .image-wrapper {
+        display: flex;
+        margin: 0 1em 1em 0;
+
+        .image {
+            width: 180px;
+            height: 180px;
+            border-radius: 4px;
+        }
+    }
+
+    .information-wrapper {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            margin: 32px 0 16px;
+
+            .price {
+                margin-right: 10px;
+                font-size: 1.5em;    // 24px / 16px.
+
+                &::before {
+                    content: '$';
+                    margin-right: 5px;
+                }
+            }
+
+            .free-shipping-icon {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        .title {
+            font-size: 1.125em;    // 18px / 16px.
+        }
+    }
+
+    .location-wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .location {
+            font-size: .75em;    // 12px / 16px.
+            color: #999;
+        }
+    }
+}
